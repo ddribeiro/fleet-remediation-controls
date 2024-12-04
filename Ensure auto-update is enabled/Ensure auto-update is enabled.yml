@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: policy
+spec:
+  name: Ensure auto-update is enabled
+  platforms: macOS
+  platform: darwin
+  description: Checks that the system is configured via MDM to automatically install updates.
+  resolution: "Ask your system administrator to deploy an MDM profile that enables automatic updates."
+  query: |
+    SELECT 1 WHERE 
+      EXISTS (
+        SELECT 1 FROM managed_policies WHERE 
+            domain='com.apple.SoftwareUpdate' AND 
+            name='AutomaticCheckEnabled' AND 
+            (value = 1 OR value = 'true') AND 
+            username = ''
+        )
+      AND NOT EXISTS (
+        SELECT 1 FROM managed_policies WHERE 
+            domain='com.apple.SoftwareUpdate' AND 
+            name='AutomaticCheckEnabled' AND 
+            (value != 1 AND value != 'true')
+        );  
+  purpose: Informational
+  tags: compliance, CIS, CIS_Level1, premium
+  contributors: sharon-fdm
