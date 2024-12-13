@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>EnableAssessment</key>
+			<true/>
+			<key>PayloadDisplayName</key>
+			<string>System Policy Control</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.systempolicy.control.6CA698CD-1DBB-445C-BDA3-60E35FBBF0E9</string>
+			<key>PayloadType</key>
+			<string>com.apple.systempolicy.control</string>
+			<key>PayloadUUID</key>
+			<string>6CA698CD-1DBB-445C-BDA3-60E35FBBF0E9</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>Enable Gatekeeper</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleetdm.enablegatekeeper.DF30A9A2-C9F9-421D-A26A-6FAA7216E72F</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>DF30A9A2-C9F9-421D-A26A-6FAA7216E72F</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
