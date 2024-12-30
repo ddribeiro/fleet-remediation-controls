@@ -131,8 +131,6 @@ spec:
   platform: windows
   contributors: kswagler-rh
 ---
-
----
 apiVersion: v1
 kind: policy
 spec:
@@ -143,8 +141,6 @@ spec:
   tags: compliance, hardening, built-in
   platform: windows
   contributors: GuillaumeRoss
----
-
 ---
 apiVersion: v1
 kind: policy
@@ -209,17 +205,6 @@ spec:
   description: "Checks that a mobile device management (MDM) solution configures the Mac to automatically install operating system updates."
   resolution: "Contact your IT administrator to ensure your Mac is receiving a profile that enables automatic installation of operating system updates."
   tags: MDM required, compliance, CIS, CIS1.6
-  platform: darwin
-  contributors: GuillaumeRoss
----
-apiVersion: v1
-kind: policy
-spec:
-  name: Time and date are configured to be updated automatically (macOS)
-  query: SELECT 1 FROM managed_policies WHERE domain='com.apple.applicationaccess' AND name='forceAutomaticDateAndTime' AND value=1 LIMIT 1;
-  description: "Checks that a mobile device management (MDM) solution configures the Mac to automatically update the time and date."
-  resolution: "Contact your IT administrator to ensure your Mac is receiving a profile that enables automatic time and date configuration."
-  tags: MDM required, compliance, CIS, CIS2.2.1
   platform: darwin
   contributors: GuillaumeRoss
 ---

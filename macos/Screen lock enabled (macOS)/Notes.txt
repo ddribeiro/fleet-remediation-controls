@@ -1,0 +1,3 @@
+Notes: This profile gets the policy to pass, but I don't think the forceAutomaticDateAndTime key does anything in macOS Sonoma and later. My system running Sequoia lets me turn off "Set time and date automatically" in General > Date & Time with this profile deployed.
+
+This policy likely is not useful anymore in Sonoma and later.
