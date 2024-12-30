@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Managed Preferences</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.MCX.7BE9B7E8-14E4-49CF-AEC5-CD7806957F5A</string>
+			<key>PayloadType</key>
+			<string>com.apple.MCX</string>
+			<key>PayloadUUID</key>
+			<string>7BE9B7E8-14E4-49CF-AEC5-CD7806957F5A</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>forceInternetSharingOff</key>
+			<true/>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>Turn off internet sharing</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleetdm.turnOffInternetSharing.22125243-721F-4A26-862E-5B16F28977C0</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>22125243-721F-4A26-862E-5B16F28977C0</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
