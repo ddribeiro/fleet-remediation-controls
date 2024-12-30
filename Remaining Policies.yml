@@ -153,16 +153,7 @@ spec:
   platform: darwin
   contributors: GuillaumeRoss
 ---
-apiVersion: v1
-kind: policy
-spec:
-  name: Lock screen after inactivity of 20 minutes or less (macOS)
-  query: SELECT 1 WHERE EXISTS (SELECT CAST(value as integer(4)) valueint from managed_policies WHERE domain = 'com.apple.screensaver' AND name = 'askForPasswordDelay' AND valueint <= 60 LIMIT 1) AND EXISTS (SELECT CAST(value as integer(4)) valueint from managed_policies WHERE domain = 'com.apple.screensaver' AND name = 'idleTime' AND valueint <= 1140 LIMIT 1) AND EXISTS (SELECT 1 from managed_policies WHERE domain='com.apple.screensaver' AND name='askForPassword' AND value=1 LIMIT 1);
-  description: "Checks that a mobile device management (MDM) solution configures the Mac to lock the screen after 20 minutes or less."
-  resolution: "Contact your IT administrator to ensure your Mac is receiving a profile that enables the screen saver after inactivity of 20 minutes or less."
-  tags: MDM required, compliance, CIS, CIS2.3.1, CIS5.8
-  platform: darwin
-  contributors: GuillaumeRoss
+
 ---
 apiVersion: v1
 kind: policy
