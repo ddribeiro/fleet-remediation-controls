@@ -153,8 +153,6 @@ spec:
   platform: darwin
   contributors: GuillaumeRoss
 ---
-
----
 apiVersion: v1
 kind: policy
 spec:
