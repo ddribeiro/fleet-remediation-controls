@@ -156,17 +156,6 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: Automatic installation of application updates is enabled (macOS)
-  query: SELECT 1 FROM managed_policies WHERE domain='com.apple.SoftwareUpdate' AND name='AutomaticallyInstallAppUpdates' AND value=1 LIMIT 1;
-  description: "Checks that a mobile device management (MDM) solution configures the Mac to automatically install updates to App Store applications."
-  resolution: "Contact your IT administrator to ensure your Mac is receiving a profile that enables automatic installation of application updates."
-  tags: MDM required, compliance, CIS, CIS1.4
-  platform: darwin
-  contributors: GuillaumeRoss
----
-apiVersion: v1
-kind: policy
-spec:
   name: Automatic security and data file updates is enabled (macOS)
   query: SELECT 1 FROM managed_policies WHERE domain='com.apple.SoftwareUpdate' AND name='CriticalUpdateInstall' AND value=1 LIMIT 1;
   description: "Checks that a mobile device management (MDM) solution configures the Mac to automatically download updates to built-in macOS security tools such as malware removal tools."

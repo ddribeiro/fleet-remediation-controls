@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>AutomaticallyInstallAppUpdates</key>
+			<true/>
+			<key>PayloadDisplayName</key>
+			<string>Software Update</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.SoftwareUpdate.4E11DA65-B6D8-4C65-AB72-DAC3177FC487</string>
+			<key>PayloadType</key>
+			<string>com.apple.SoftwareUpdate</string>
+			<key>PayloadUUID</key>
+			<string>4E11DA65-B6D8-4C65-AB72-DAC3177FC487</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>Enable automatic installation of application updates</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleetdm.enableAutomaticInstallationOfAppUpdates.66A51CA4-49DE-49B1-A8EE-DFB0D44D5C62</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>66A51CA4-49DE-49B1-A8EE-DFB0D44D5C62</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
