@@ -1,0 +1,1 @@
+Note: The profile that satisfies this policy somewhat overlaps with the profile used in the "Antivirus Healthy (macOS)" policy/profile pair.
