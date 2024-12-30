@@ -68,20 +68,6 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: Antivirus healthy (macOS)
-  query: SELECT score FROM (SELECT case when COUNT(*) = 2 then 1 ELSE 0 END AS score FROM plist WHERE (key = 'CFBundleShortVersionString' AND path = '/Library/Apple/System/Library/CoreServices/XProtect.bundle/Contents/Info.plist' AND value>=2162) OR (key = 'CFBundleShortVersionString' AND path = '/Library/Apple/System/Library/CoreServices/MRT.app/Contents/Info.plist' and value>=1.93)) WHERE score == 1;
-  description: Checks the version of Malware Removal Tool (MRT) and the built-in macOS AV (Xprotect). Replace version numbers with the latest version regularly.
-  resolution:
-    To enable automatic security definition updates, on the failing device, select System
-    Preferences > Software Update > Advanced > Turn on Install system data files and security
-    updates.
-  tags: compliance, malware, hardening, built-in, template
-  platform: darwin
-  contributors: GuillaumeRoss
----
-apiVersion: v1
-kind: policy
-spec:
   name: Antivirus healthy (Windows)
   query: SELECT 1 from windows_security_center wsc CROSS JOIN windows_security_products wsp WHERE antivirus = 'Good' AND type = 'Antivirus' AND signatures_up_to_date=1;
   description: Checks the status of antivirus and signature updates from the Windows Security Center.
@@ -146,17 +132,6 @@ spec:
   contributors: kswagler-rh
 ---
 
----
-apiVersion: v1
-kind: policy
-spec:
-  name: Screen lock enabled (macOS)
-  query: SELECT 1 FROM managed_policies WHERE name='askForPassword' AND value='1';
-  description: "Checks that a mobile device management (MDM) solution configures the Mac to enable screen lock."
-  resolution: "Contact your IT administrator to ensure your Mac is receiving a profile that enables screen lock."
-  tags: MDM required, compliance, hardening, built-in
-  platform: darwin
-  contributors: GuillaumeRoss
 ---
 apiVersion: v1
 kind: policy
