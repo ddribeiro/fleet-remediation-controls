@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Restrictions</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.applicationaccess.EEFDDF9B-F4D3-45FC-A832-F20096938668</string>
+			<key>PayloadType</key>
+			<string>com.apple.applicationaccess</string>
+			<key>PayloadUUID</key>
+			<string>EEFDDF9B-F4D3-45FC-A832-F20096938668</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>allowContentCaching</key>
+			<false/>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>Disable content caching</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleetdm.disableContentCaching.6154F973-CF2C-46A5-B38C-DCF44A3FFC65</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>6154F973-CF2C-46A5-B38C-DCF44A3FFC65</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
