@@ -1,0 +1,1 @@
+Note: Query needs to be updated as the com.apple.loginwindow payload is incorrect. com.apple.MCX is the payload that manages this setting.N
