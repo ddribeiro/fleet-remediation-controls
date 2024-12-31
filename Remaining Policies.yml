@@ -156,17 +156,6 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: Firewall logging is enabled (macOS)
-  query: SELECT 1 FROM managed_policies WHERE domain='com.apple.security.firewall' AND name='EnableLogging' AND value='1' LIMIT 1;
-  description: "Checks that a mobile device management (MDM) solution configures the Mac to log firewall activity."
-  resolution: "Contact your IT administrator to ensure your Mac is receiving a profile that enables firewall logging."
-  tags: MDM required, compliance, CIS, CIS3.6
-  platform: darwin
-  contributors: GuillaumeRoss
----
-apiVersion: v1
-kind: policy
-spec:
   name: Guest account disabled (macOS)
   query: SELECT 1 FROM managed_policies WHERE domain='com.apple.loginwindow' AND name='DisableGuestAccount' AND value='1' LIMIT 1;
   description: "Checks that a mobile device management (MDM) solution configures the Mac to prevent the use of a guest account."
