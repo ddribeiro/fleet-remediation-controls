@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: policy
+spec:
+  name: iCloud Desktop and Document sync is disabled (macOS)
+  query: SELECT 1 FROM managed_policies WHERE domain='com.apple.icloud.managed' AND name='DisableCloudSync' AND value='1' LIMIT 1;
+  description: "Checks that a mobile device management (MDM) solution configures the Mac to prevent iCloud Desktop and Documents sync."
+  resolution: "Contact your IT administrator to ensure your Mac is receiving a profile to prevent iCloud Desktop and Documents sync."
+  tags: MDM required, compliance, CIS, CIS2.6.1.4
+  platform: darwin
+  contributors: GuillaumeRoss

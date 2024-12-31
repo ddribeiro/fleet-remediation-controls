@@ -20,7 +20,7 @@
 		</dict>
 	</array>
 	<key>PayloadDisplayName</key>
-	<string>Limit ad tracking</string>
+	<string>Disable iCloud Desktop and Documents Sync</string>
 	<key>PayloadIdentifier</key>
 	<string>com.fleetdm.disableiCloudDesktopAndDocumentsSync.9CEE4A9A-3BC6-4E2C-A093-8CC3B7F26EF8</string>
 	<key>PayloadType</key>
